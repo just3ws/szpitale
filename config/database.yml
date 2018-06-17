@@ -1,0 +1,17 @@
+---
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  pool: 5
+  port: 5432
+  timeout: 5000
+  username: postgres
+
+development:
+  <<: *default
+  database: szpitale_development
+
+test:
+  <<: *default
+  database: szpitale_test

@@ -1,0 +1,9 @@
+.byebug_history
+.dockerignore
+.git*
+.rspec_status
+Dockerfile
+README.md
+REQUIREMENTS.md
+log/*
+tmp/*
