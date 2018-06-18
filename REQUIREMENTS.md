@@ -29,8 +29,8 @@ TODO
       performing a POST or PUT. Please commit your code at this point.
 - [x] Add the ability to filter the collection GET endpoint by city. Please
       commit your code at this point.
-- [] Add the ability to order the collection GET endpoint by name. Please
-  commit your code at this point.
+- [x] Add the ability to order the collection GET endpoint by name. Please
+      commit your code at this point.
 
 BONUS
 

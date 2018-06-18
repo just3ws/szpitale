@@ -48,6 +48,16 @@ RSpec.describe HospitalsController, type: :controller do
         expect(response).to be_successful
       end
 
+      it 'orders by name' do
+        actual = @json.map { |r| r['name'] }
+        expected = [starfleet_attrs[:name], klingon_attrs[:name]]
+
+        ap actual
+        ap expected
+
+        expect(actual).to eq(expected)
+      end
+
       it 'returns two records' do
         expect(@json.count).to eq(2)
       end

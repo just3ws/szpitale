@@ -9,7 +9,7 @@ class HospitalsController < ApplicationController
                    Hospital.where(city: city_filter_param)
                  else
                    Hospital.all
-                 end
+                 end.order(name: :asc)
 
     render json: @hospitals
   end
