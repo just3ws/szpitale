@@ -5,7 +5,11 @@ class HospitalsController < ApplicationController
 
   # GET /hospitals
   def index
-    @hospitals = Hospital.all
+    @hospitals = if city_filter_param
+                   Hospital.where(city: city_filter_param)
+                 else
+                   Hospital.all
+                 end
 
     render json: @hospitals
   end
@@ -48,5 +52,9 @@ class HospitalsController < ApplicationController
 
   def hospital_params
     params.require(:hospital).permit(:name, :city, :state, :address)
+  end
+
+  def city_filter_param
+    params.permit(:city).fetch(:city, nil)
   end
 end
