@@ -52,9 +52,6 @@ RSpec.describe HospitalsController, type: :controller do
         actual = @json.map { |r| r['name'] }
         expected = [starfleet_attrs[:name], klingon_attrs[:name]]
 
-        ap actual
-        ap expected
-
         expect(actual).to eq(expected)
       end
 

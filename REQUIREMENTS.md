@@ -34,14 +34,14 @@ TODO
 
 BONUS
 
-- [] Write functional tests for the endpoints (using behat if using api-platform).
-- [] Write unit tests for any appropriate code (using phpunit if using php).
-- [] Hook your project up to a build server (i.e. travis-ci.org) to run your tests.
+- [x] Write functional tests for the endpoints (using behat if using api-platform).
+- [x] Write unit tests for any appropriate code (using phpunit if using php).
+- [x] Hook your project up to a build server (i.e. travis-ci.org) to run your tests.
 - [] Add HTTP basic authentication to your API. Hardcoded usernames/passwords are fine.
 - [] Using role based authentication, restrict POST/PUT/DELETE to an elevated
   user role (ADMIN) while allowing any user to perform GET requests. Hardcoded
   role data is fine.
-- [] Containerize your project with docker.
+- [x] Containerize your project with docker.
 
 MANDATORY
 

@@ -1,5 +1,7 @@
 # Szpitale
 
+[![CircleCI](https://circleci.com/gh/just3ws/szpitale/tree/master.svg?style=svg)](https://circleci.com/gh/just3ws/szpitale/tree/master)
+
 ## Setup environment
 
 ```sh

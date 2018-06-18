@@ -2,7 +2,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: db
+  host: <%= ENV.fetch('PGHOST', 'db') %>
   pool: 5
   port: 5432
   timeout: 5000
