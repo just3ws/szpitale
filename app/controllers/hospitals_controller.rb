@@ -51,7 +51,9 @@ class HospitalsController < ApplicationController
   end
 
   def hospital_params
-    params.require(:hospital).permit(:name, :city, :state, :address)
+    params
+      .require(:hospital)
+      .permit(:name, :city, :state, :address, :phone_number)
   end
 
   def city_filter_param

@@ -8,7 +8,8 @@ RSpec.describe HospitalsController, type: :controller do
       address: '24-593 Federation Drive',
       state: 'CA',
       city: 'San Francisco',
-      name: 'Starfleet Academy'
+      name: 'Starfleet Academy',
+      phone_number: '8885551212'
     }
   end
 
@@ -17,7 +18,8 @@ RSpec.describe HospitalsController, type: :controller do
       address: '1 United Nations Plz',
       state: 'NY',
       city: 'New York',
-      name: 'The Klingon Embassy (Earth)'
+      name: 'The Klingon Embassy (Earth)',
+      phone_number: '8885551313'
     }
   end
 
