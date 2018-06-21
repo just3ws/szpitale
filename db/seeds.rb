@@ -9,7 +9,7 @@ hospitals_json = JSON.parse(response.body, symbolize_names: true)
 
 hospitals_json.each do |hospital_json|
   hospital_id = hospital_json.slice(:id)
-  hospital_attributes = hospital_json.except(:id)
+  hospital_attributes = hospital_json.except(:id).merge(phone_number: '8885551212')
 
   Hospital
     .create_with(hospital_attributes)
